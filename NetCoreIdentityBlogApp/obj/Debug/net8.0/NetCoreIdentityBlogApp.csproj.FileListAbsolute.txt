@@ -256,3 +256,4 @@ C:\Users\uzeyir\Desktop\NetCoreIdentityBlogApp\NetCoreIdentityBlogApp\obj\Debug\
 C:\Users\uzeyir\Desktop\NetCoreIdentityBlogApp\NetCoreIdentityBlogApp\obj\Debug\net8.0\NetCoreIdentityBlogApp.pdb
 C:\Users\uzeyir\Desktop\NetCoreIdentityBlogApp\NetCoreIdentityBlogApp\obj\Debug\net8.0\NetCoreIdentityBlogApp.genruntimeconfig.cache
 C:\Users\uzeyir\Desktop\NetCoreIdentityBlogApp\NetCoreIdentityBlogApp\obj\Debug\net8.0\ref\NetCoreIdentityBlogApp.dll
+C:\Users\uzeyir\Desktop\NetCoreIdentityBlogApp\NetCoreIdentityBlogApp\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
