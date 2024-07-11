@@ -13,7 +13,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         .Configuration.GetConnectionString("SqlCon"));
 });
 
-builder.Services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<AppDbContext>();
+//builder.Services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<AppDbContext>();
 
 //extensions
 //Password validation ext

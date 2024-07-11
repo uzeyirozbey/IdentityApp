@@ -1,4 +1,5 @@
-﻿using NetCoreIdentityBlogApp.Models;
+﻿using NetCoreIdentityBlogApp.CustomValidations;
+using NetCoreIdentityBlogApp.Models;
 
 namespace NetCoreIdentityBlogApp.Extensions
 {
@@ -12,10 +13,10 @@ namespace NetCoreIdentityBlogApp.Extensions
                 options.User.AllowedUserNameCharacters  = "abcdefghijklmnoprstuvyzx1234567890_";
                 options.Password.RequiredLength         = 6;
                 options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireUppercase       = false;
                 options.Password.RequireLowercase       = true;
+                options.Password.RequireUppercase       = false;
                 options.Password.RequireDigit           = false;
-            }).AddEntityFrameworkStores<AppDbContext>();
+            }).AddPasswordValidator<PasswordValidator>().AddEntityFrameworkStores<AppDbContext>();
         }
     }
 }
