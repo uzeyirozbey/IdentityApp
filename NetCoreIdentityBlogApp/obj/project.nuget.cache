@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3R6qwdSTsn4=",
+  "dgSpecHash": "LIX1n1chuyI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\uzeyir\\Desktop\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj",
+  "projectFilePath": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\uzeyir\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\uzeyir\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

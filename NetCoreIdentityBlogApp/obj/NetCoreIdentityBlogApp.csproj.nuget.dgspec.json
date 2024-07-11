@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uzeyir\\Desktop\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj": {}
+    "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uzeyir\\Desktop\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj": {
+    "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uzeyir\\Desktop\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj",
+        "projectUniqueName": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj",
         "projectName": "NetCoreIdentityBlogApp",
-        "projectPath": "C:\\Users\\uzeyir\\Desktop\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj",
+        "projectPath": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj",
         "packagesPath": "C:\\Users\\uzeyir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uzeyir\\Desktop\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\obj\\",
+        "outputPath": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
