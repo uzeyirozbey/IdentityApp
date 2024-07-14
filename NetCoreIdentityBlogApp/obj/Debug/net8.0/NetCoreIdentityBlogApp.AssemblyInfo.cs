@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetCoreIdentityBlogApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58d79774e0ff5e8d111b84e128af36a18f0e3309")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a83d23c53e9f69159f6febe79839257534bd102e")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetCoreIdentityBlogApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetCoreIdentityBlogApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

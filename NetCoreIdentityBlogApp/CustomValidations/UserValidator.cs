@@ -7,23 +7,13 @@ namespace NetCoreIdentityBlogApp.CustomValidations
     {
         public Task<IdentityResult> ValidateAsync(UserManager<AppUser> manager, AppUser user)
         {
-            var errors = new List<IdentityError>();
-            //if (password!.ToLower().Contains(user.UserName!.ToLower()))
-            //{
-            //    errors.Add(new IdentityError
-            //    {
-            //        Code = "PasswordNoContainUserName",
-            //        Description = "Şifre alanı kullanıcı adı alanı içeremez."
-            //    });
-            //}
-            //if (password!.ToLower().StartsWith("1234"))
-            //{
-            //    errors.Add(new IdentityError
-            //    {
-            //        Code = "PasswordNoContain1234",
-            //        Description = "Şifre alanı ardışık sayı içeremez."
-            //    });
-            //}
+            var errors      = new List<IdentityError>();
+            var IsDigit     = int.TryParse(user.UserName[0]!.ToString(),out _);
+            if (IsDigit)
+            {
+                errors.Add(new() {  Code ="UserNameContainsFirstLetterDigit", Description="Kullanıcı adının ilkı karakteri sayısal bir karakter içermez."});
+            }
+
             if (errors.Any())
             {
                 return Task.FromResult(IdentityResult.Failed(errors.ToArray()));

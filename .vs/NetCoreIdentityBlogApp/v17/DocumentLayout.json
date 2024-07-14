@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\viewmodels\\signupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\viewmodels\\signupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\localization\\localizationidentityerrordescriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\localization\\localizationidentityerrordescriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\netcoreidentityblogapp\\extensions\\startupextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\netcoreidentityblogapp\\extensions\\startupextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\extensions\\startupextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\extensions\\startupextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\customvalidations\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\customvalidations\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\netcoreidentityblogapp\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\netcoreidentityblogapp\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,51 +51,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SignUpViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\ViewModels\\SignUpViewModel.cs",
-              "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\ViewModels\\SignUpViewModel.cs",
-              "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\ViewModels\\SignUpViewModel.cs",
-              "RelativeToolTip": "NetCoreIdentityBlogApp\\ViewModels\\SignUpViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBoAAAAAAAAA",
+              "Title": "LocalizationIdentityErrorDescriber.cs",
+              "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Localization\\LocalizationIdentityErrorDescriber.cs",
+              "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\Localization\\LocalizationIdentityErrorDescriber.cs",
+              "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Localization\\LocalizationIdentityErrorDescriber.cs",
+              "RelativeToolTip": "NetCoreIdentityBlogApp\\Localization\\LocalizationIdentityErrorDescriber.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T23:01:38.706Z",
+              "WhenOpened": "2024-07-13T21:23:42.404Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T11:31:12.102Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "StartupExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\Extensions\\StartupExtensions.cs",
-              "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\Extensions\\StartupExtensions.cs",
-              "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\Extensions\\StartupExtensions.cs",
-              "RelativeToolTip": "NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp\\Extensions\\StartupExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAbAAAA",
+              "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Extensions\\StartupExtensions.cs",
+              "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\Extensions\\StartupExtensions.cs",
+              "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Extensions\\StartupExtensions.cs",
+              "RelativeToolTip": "NetCoreIdentityBlogApp\\Extensions\\StartupExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T11:29:56.491Z"
+              "WhenOpened": "2024-07-13T21:08:34.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\CustomValidations\\UserValidator.cs",
+              "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\CustomValidations\\UserValidator.cs",
+              "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\CustomValidations\\UserValidator.cs",
+              "RelativeToolTip": "NetCoreIdentityBlogApp\\CustomValidations\\UserValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T20:49:00.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Program.cs",
               "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\Program.cs",
               "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Program.cs",
               "RelativeToolTip": "NetCoreIdentityBlogApp\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAkwB4AAAAaAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAkwCcAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T11:23:19.362Z"
+              "WhenOpened": "2024-07-11T11:23:19.362Z",
+              "EditorCaption": ""
             }
           ]
         }
