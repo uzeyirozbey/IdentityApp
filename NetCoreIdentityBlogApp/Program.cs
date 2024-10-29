@@ -14,10 +14,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 //builder.Services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<AppDbContext>();
-
+builder.Services.AddIdentityWithExt();
 //extensions
 //Password validation ext
-builder.Services.AddIdentityWithExt();
+//builder.Services.AddIdentityWithExt();
 
 var app = builder.Build();
 

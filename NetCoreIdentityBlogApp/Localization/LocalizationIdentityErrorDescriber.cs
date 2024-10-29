@@ -17,6 +17,10 @@ namespace NetCoreIdentityBlogApp.Localization
         {
             return new IdentityError { Code = "PasswordTooShort", Description = "Şifre en az 6 karakterli olmalıdır" };
         }
+        public override IdentityError PasswordRequiresLower()
+        {
+           return new IdentityError { Code = " PasswordRequiresLower", Description = "Şifre en az küçük harf bulunmalıdır" };
+        }
 
     }
 }

@@ -29,7 +29,7 @@ namespace NetCoreIdentityBlogApp.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View();
+                return View("merhaba");
             }
            var identityResult = await _userManager.CreateAsync(new()
             {
