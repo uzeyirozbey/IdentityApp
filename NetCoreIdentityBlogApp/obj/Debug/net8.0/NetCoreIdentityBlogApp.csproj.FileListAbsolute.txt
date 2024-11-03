@@ -517,3 +517,5 @@ C:\Users\uzeyir\Documents\GitHub\IdentityApp\NetCoreIdentityBlogApp\obj\Debug\ne
 C:\Users\uzeyir\Documents\GitHub\IdentityApp\NetCoreIdentityBlogApp\obj\Debug\net8.0\NetCoreIdentityBlogApp.pdb
 C:\Users\uzeyir\Documents\GitHub\IdentityApp\NetCoreIdentityBlogApp\obj\Debug\net8.0\NetCoreIdentityBlogApp.genruntimeconfig.cache
 C:\Users\uzeyir\Documents\GitHub\IdentityApp\NetCoreIdentityBlogApp\obj\Debug\net8.0\ref\NetCoreIdentityBlogApp.dll
+C:\Users\uzeyir\Documents\GitHub\IdentityApp\NetCoreIdentityBlogApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\uzeyir\Documents\GitHub\IdentityApp\NetCoreIdentityBlogApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

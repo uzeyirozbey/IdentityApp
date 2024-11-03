@@ -17,6 +17,10 @@ namespace NetCoreIdentityBlogApp.Extensions
                 options.Password.RequireLowercase = true;
                 options.Password.RequireUppercase = false;
                 options.Password.RequireDigit = false;
+                //Üst Üste yanlış girişlerde bir girişi kitlemek için
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
+                options.Lockout.MaxFailedAccessAttempts = 3;
+
             }).AddPasswordValidator<PasswordValidator>()
             .AddUserValidator<UserValidator>()
             .AddErrorDescriber<LocalizationIdentityErrorDescriber>()

@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using NetCoreIdentityBlogApp.Models;
 using NetCoreIdentityBlogApp.Extensions;
@@ -13,8 +13,25 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         .Configuration.GetConnectionString("SqlCon"));
 });
 
+
+
+
 //builder.Services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddIdentityWithExt();
+
+//Cookie işlemleri
+builder.Services.ConfigureApplicationCookie(option =>
+{
+    var cookieBuilder = new CookieBuilder();
+    cookieBuilder.Name = "BlogAppUser";
+    option.LoginPath = new PathString("/Home/SignIn");
+    option.Cookie = cookieBuilder;
+    option.ExpireTimeSpan = TimeSpan.FromDays(60);
+    //Kullanıcı her giriş yaptığında 60 gün süreyi uzat
+    option.SlidingExpiration = true;
+});
+
+
 //extensions
 //Password validation ext
 //builder.Services.AddIdentityWithExt();
