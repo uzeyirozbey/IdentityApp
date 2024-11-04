@@ -25,6 +25,7 @@ builder.Services.ConfigureApplicationCookie(option =>
     var cookieBuilder = new CookieBuilder();
     cookieBuilder.Name = "BlogAppUser";
     option.LoginPath = new PathString("/Home/SignIn");
+    option.LogoutPath = new PathString("/Member/Logout");
     option.Cookie = cookieBuilder;
     option.ExpireTimeSpan = TimeSpan.FromDays(60);
     //Kullanıcı her giriş yaptığında 60 gün süreyi uzat
