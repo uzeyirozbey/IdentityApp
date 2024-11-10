@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NetCoreIdentityBlogApp.Models;
-using NetCoreIdentityBlogApp.ViewModels;
 using NetCoreIdentityBlogApp.Extensions;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using NetCoreIdentityBlogApp.Models.ViewModels;
 
 namespace NetCoreIdentityBlogApp.Controllers
 {
@@ -29,18 +29,18 @@ namespace NetCoreIdentityBlogApp.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> SignIn(SignInViewModel request, string? returnUrl=null)
+        public async Task<IActionResult> SignIn(SignInViewModel request, string? returnUrl = null)
         {
-            returnUrl = returnUrl ?? Url.Action("Index","Home");
+            returnUrl = returnUrl ?? Url.Action("Index", "Home");
 
             var hasUser = await _UserManager.FindByEmailAsync(request.Email);
-            if(hasUser == null)
+            if (hasUser == null)
             {
                 ModelState.AddModelError(string.Empty, "Email veya şifre yanlış");
                 return View();
             }
 
-            var SignInResult = await _SignInManager.PasswordSignInAsync(hasUser,request.Password,request.RememberMe, true);
+            var SignInResult = await _SignInManager.PasswordSignInAsync(hasUser, request.Password, request.RememberMe, true);
 
             if (SignInResult.Succeeded)
             {
@@ -54,7 +54,7 @@ namespace NetCoreIdentityBlogApp.Controllers
             }
 
             //Yanlış girişlerde sistemi geçici süreliğine kitlendiğine dair bilgi verme.
-            ModelState.AddModelErrorList(new List<string>(){$"Email veya Şifre Yanlış.(Başarısız giriş sayısı= {await _UserManager.GetAccessFailedCountAsync(hasUser)})"});
+            ModelState.AddModelErrorList(new List<string>() { $"Email veya Şifre Yanlış.(Başarısız giriş sayısı= {await _UserManager.GetAccessFailedCountAsync(hasUser)})" });
             return View();
         }
 
@@ -63,14 +63,14 @@ namespace NetCoreIdentityBlogApp.Controllers
         [HttpPost]
         public async Task<IActionResult> SignUp(SignUpViewModel request)
         {
-           if (!ModelState.IsValid) return View();
+            if (!ModelState.IsValid) return View();
 
-           var identityResult = await _UserManager.CreateAsync(new()
+            var identityResult = await _UserManager.CreateAsync(new()
             {
-                UserName        = request.UserName,
-                PhoneNumber     = request.Phone,
-                Email           = request.Email
-            },request.Password);
+                UserName = request.UserName,
+                PhoneNumber = request.Phone,
+                Email = request.Email
+            }, request.Password);
 
             if (identityResult.Succeeded)
             {
@@ -79,7 +79,23 @@ namespace NetCoreIdentityBlogApp.Controllers
             }
 
             //Burda Extension kullandık
-            ModelState.AddModelErrorList(identityResult.Errors.Select(x=>x.Description).ToList());
+            ModelState.AddModelErrorList(identityResult.Errors.Select(x => x.Description).ToList());
+            return View();
+        }
+
+        public IActionResult ForgetPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ForgetPassword(ForgetPasswordViewModel request)
+        {
+            //link.https://localhost:7009
+            var hasUser = await _UserManager.FindByEmailAsync(request.Email);
+            if (hasUser == null) {
+                ModelState.AddModelError(string.Empty, "Bu e-posta adresine ait kullanici bulunamamıştur");
+            }
             return View();
         }
 

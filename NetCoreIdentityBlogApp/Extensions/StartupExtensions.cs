@@ -1,4 +1,5 @@
-﻿using NetCoreIdentityBlogApp.CustomValidations;
+﻿using Microsoft.AspNetCore.Identity;
+using NetCoreIdentityBlogApp.CustomValidations;
 using NetCoreIdentityBlogApp.Localization;
 using NetCoreIdentityBlogApp.Models;
 
@@ -24,6 +25,7 @@ namespace NetCoreIdentityBlogApp.Extensions
             }).AddPasswordValidator<PasswordValidator>()
             .AddUserValidator<UserValidator>()
             .AddErrorDescriber<LocalizationIdentityErrorDescriber>()
+            .AddDefaultTokenProviders()
             .AddEntityFrameworkStores<AppDbContext>();
         }
     }

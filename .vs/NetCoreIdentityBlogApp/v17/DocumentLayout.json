@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|c:\\users\\uzeyir\\documents\\github\\identityapp\\netcoreidentityblogapp\\views\\home\\forgetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8917BBE-DDC3-40EB-AEB0-7EE57B54634C}|NetCoreIdentityBlogApp\\NetCoreIdentityBlogApp.csproj|solutionrelative:netcoreidentityblogapp\\views\\home\\forgetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,54 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Program.cs",
               "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\Program.cs",
               "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Program.cs",
               "RelativeToolTip": "NetCoreIdentityBlogApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T21:18:34.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MemberController.cs",
-              "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Controllers\\MemberController.cs",
-              "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\Controllers\\MemberController.cs",
-              "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Controllers\\MemberController.cs*",
-              "RelativeToolTip": "NetCoreIdentityBlogApp\\Controllers\\MemberController.cs*",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAywBMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T20:39:47.992Z",
+              "WhenOpened": "2024-11-10T20:12:50.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Navbar.cshtml",
-              "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Views\\Shared\\_Navbar.cshtml",
-              "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\Views\\Shared\\_Navbar.cshtml",
-              "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Views\\Shared\\_Navbar.cshtml",
-              "RelativeToolTip": "NetCoreIdentityBlogApp\\Views\\Shared\\_Navbar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-03T15:37:17.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Controllers\\HomeController.cs",
               "RelativeToolTip": "NetCoreIdentityBlogApp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBcAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAjwGAAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T21:56:01.168Z",
+              "WhenOpened": "2024-11-10T13:52:13.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ForgetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Views\\Home\\ForgetPassword.cshtml",
+              "RelativeDocumentMoniker": "NetCoreIdentityBlogApp\\Views\\Home\\ForgetPassword.cshtml",
+              "ToolTip": "C:\\Users\\uzeyir\\Documents\\GitHub\\IdentityApp\\NetCoreIdentityBlogApp\\Views\\Home\\ForgetPassword.cshtml",
+              "RelativeToolTip": "NetCoreIdentityBlogApp\\Views\\Home\\ForgetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T11:56:25.451Z",
               "EditorCaption": ""
             }
           ]
