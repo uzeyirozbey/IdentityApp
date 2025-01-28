@@ -5,6 +5,7 @@ using NetCoreIdentityBlogApp.Extensions;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using NetCoreIdentityBlogApp.Models.ViewModels;
+using NetCoreIdentityBlogApp.Services;
 
 namespace NetCoreIdentityBlogApp.Controllers
 {
@@ -13,21 +14,19 @@ namespace NetCoreIdentityBlogApp.Controllers
         private readonly ILogger<HomeController> _Logger;
         private readonly UserManager<AppUser> _UserManager;
         private readonly SignInManager<AppUser> _SignInManager;
-
-        public HomeController(ILogger<HomeController> logger, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+        private readonly IEmailService _EmailService;
+        public HomeController(ILogger<HomeController> logger, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,IEmailService emailService)
         {
             _Logger = logger;
             _UserManager = userManager;
             _SignInManager = signInManager;
+            _EmailService = emailService;
+
         }
 
         public IActionResult Index() => View();
-
         public IActionResult Privacy() => View();
-
         public IActionResult SignIn() => View();
-
-
         [HttpPost]
         public async Task<IActionResult> SignIn(SignInViewModel request, string? returnUrl = null)
         {
@@ -59,7 +58,6 @@ namespace NetCoreIdentityBlogApp.Controllers
         }
 
         public IActionResult SignUp() => View();
-
         [HttpPost]
         public async Task<IActionResult> SignUp(SignUpViewModel request)
         {
@@ -82,23 +80,58 @@ namespace NetCoreIdentityBlogApp.Controllers
             ModelState.AddModelErrorList(identityResult.Errors.Select(x => x.Description).ToList());
             return View();
         }
-
         public IActionResult ForgetPassword()
         {
             return View();
         }
-
         [HttpPost]
         public async Task<IActionResult> ForgetPassword(ForgetPasswordViewModel request)
         {
-            //link.https://localhost:7009
             var hasUser = await _UserManager.FindByEmailAsync(request.Email);
             if (hasUser == null) {
                 ModelState.AddModelError(string.Empty, "Bu e-posta adresine ait kullanici bulunamamıştur");
+                return View();
             }
+            string passwordResetToken = await _UserManager.GeneratePasswordResetTokenAsync(hasUser);
+            var passwordResetLink = Url.Action("ResetPassword","Home", new {userId =hasUser.Id, Token = passwordResetToken},HttpContext.Request.Scheme,"localhost:7009" );
+            await _EmailService.SendResetPasswordEmail(passwordResetLink,hasUser.Email);
+
+            TempData["SuccessMessage"] = "Şifre yenileme linki , eposta adresinize gönderilmiştir.";
+            return RedirectToAction(nameof(ForgetPassword));
+        }
+
+        public IActionResult ResetPassword(string userId,string token)
+        {
+            TempData["userId"] = userId;
+            TempData["token"] = token;
             return View();
         }
 
+        [HttpPost]
+        public async  Task<IActionResult> ResetPassword(ResetPasswordViewModel request)
+        {
+            var userId = TempData["userId"]!.ToString();
+            var token = TempData["token"]!.ToString();
+            var hasUser = await _UserManager.FindByIdAsync(userId);
+            if (hasUser == null || token==null) {
+                throw new Exception("Bir hata oluştu");
+            }
+            if(hasUser == null)
+            {
+                ModelState.AddModelError(string.Empty,"Kullanici bulunamamıştır");
+                return View();
+            }
+            IdentityResult result = await _UserManager.ResetPasswordAsync(hasUser,token, request.Password);
+            if (result.Succeeded)
+            {
+                TempData["SuccessMessage"] ="Şifreniz başarıyla yenilenmiştir.";
+            }
+            else
+            {
+                ModelState.AddModelErrorList(result.Errors.Select(x => x.Description).ToList());
+            }
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

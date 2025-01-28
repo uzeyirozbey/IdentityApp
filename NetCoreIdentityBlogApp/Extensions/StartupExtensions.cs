@@ -9,10 +9,16 @@ namespace NetCoreIdentityBlogApp.Extensions
     {
         public static void AddIdentityWithExt(this IServiceCollection services)
         {
+            //şifre sıfırlama linki token süresi ayarlama
+            services.Configure<DataProtectionTokenProviderOptions>(opt =>
+            {
+                opt.TokenLifespan = TimeSpan.FromHours(2);
+            });
+
             services.AddIdentity<AppUser, AppRole>(options =>
             {
                 options.User.RequireUniqueEmail = true;
-                options.User.AllowedUserNameCharacters = "abcdefghijklmnoprstuvyzx1234567890_@-";
+                options.User.AllowedUserNameCharacters = "abcdefghijklmnoprstuvyzx";
                 options.Password.RequiredLength = 6;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireLowercase = true;

@@ -2,6 +2,9 @@
 using Microsoft.Extensions.Options;
 using NetCoreIdentityBlogApp.Models;
 using NetCoreIdentityBlogApp.Extensions;
+using Microsoft.AspNetCore.Identity;
+using NetCoreIdentityBlogApp.Models.OptionsModels;
+using NetCoreIdentityBlogApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,10 +17,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 
-
-
 //builder.Services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<AppDbContext>();
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddIdentityWithExt();
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 //Cookie işlemleri
 builder.Services.ConfigureApplicationCookie(option =>
@@ -53,7 +56,6 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
 
 
 app.MapControllerRoute(
